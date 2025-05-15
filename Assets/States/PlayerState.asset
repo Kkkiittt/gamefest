@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6e782bb29ef58499a3f98d5096b6ef, type: 3}
   m_Name: PlayerState
   m_EditorClassIdentifier: 
-  PlayerHP: 100
+  PlayerHP: 20
   PlayerMaxHP: 100
   PlayerAttack: 15
   Maid: {fileID: 2906301926961950079, guid: cdfe4c52bd8338946af4f698144aae61, type: 3}
   Cook: {fileID: 2906301926961950079, guid: cdfe4c52bd8338946af4f698144aae61, type: 3}
   Gardener: {fileID: 2906301926961950079, guid: cdfe4c52bd8338946af4f698144aae61, type: 3}
-  Interacting: 1
+  Interacting: 0
   Sanity: 90
-  deathCause: 0
-  CookKilled: 0
-  MaidKilled: 0
-  GardenerKilled: 0
+  deathCause: 2
+  CookKilled: 1
+  MaidKilled: 1
+  GardenerKilled: 1
