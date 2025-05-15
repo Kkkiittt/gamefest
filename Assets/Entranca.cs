@@ -1,21 +1,26 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class Entranca : MonoBehaviour
 {
-	public string Scene;
+	public GameObject Wall;
+	public PlayerState state;
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
+	{
+	}
+
+	// Update is called once per frame
+	void Update()
 	{
 
 	}
 
-	// Update is called once per frame
 	private void OnTriggerStay2D(Collider2D collision)
 	{
-		if(collision.tag == "Player")
+		if(collision.tag == "Player" && state.GardenerKilled && state.MaidKilled && state.CookKilled)
 		{
-			SceneManager.LoadScene(Scene);
+			Wall.SetActive(false);
 		}
 	}
 }
